@@ -1,0 +1,44 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "zhihu spider server",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "0.22.0",
+    "koa": "2.2.0",
+    "koa-bodyparser": "4.2.0",
+    "koa-router": "7.1.1",
+    "koa2-cors": "2.0.3",
+    "mongoose": "4.9.6",
+    "node-schedule": "1.2.1",
+    "nodemailer": "4.0.1",
+    "path": "0.12.7",
+    "request": "2.81.0",
+    "request-promise-native": "1.0.3"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-node": "4.2.2",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "3.0.1",
+    "gulp": "3.9.1",
+    "gulp-eslint": "3.0.1",
+    "gulp-nodemon": "2.2.1",
+    "nodemon": "1.11.0",
+    "pm2": "2.4.6"
+  },
+  "scripts": {
+    "start": "pm2 start index.js --watch",
+    "dev": "gulp",
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
+  },
+  "keywords": [
+    "zhihu",
+    "spider"
+  ],
+  "author": "xiangxuezhang",
+  "license": "ISC"
+}
